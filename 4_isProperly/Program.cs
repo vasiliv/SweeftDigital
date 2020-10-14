@@ -4,22 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1_isPalindrome
+namespace _4_isProperly
 {
-    class Program    {
+    class Program
+    {
         public static bool answer;
-
         static void Main(string[] args)
         {
-            bool result = isPalindrome("abba");
+            bool result = isProperly("(()())");
             Console.ReadLine();
         }
-        static Boolean isPalindrome(String text)
+        static Boolean isProperly(String sequence)
         {
-            
-            for (int i = 0; i <  (int)text.Length/2; i++)
+            for (int i = 0; i < (int)(sequence.Length / 2); i++)
             {
-                if (text[i] == text[text.Length - 1 - i])
+                if ((sequence[i] == '(' && sequence[sequence.Length - 1 - i] == ')') || ((sequence[i] == ')' && sequence[sequence.Length - 1 - i] == '(')))
                 {
                     answer = true;
                 }
@@ -27,8 +26,8 @@ namespace _1_isPalindrome
                 {
                     return false;
                 }
-            }            
-            return answer;
+                return answer;
+            }
         }
     }
 }
