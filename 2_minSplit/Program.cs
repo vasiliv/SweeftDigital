@@ -11,7 +11,6 @@ namespace _2_minSplit
         static void Main(string[] args)
         {
             int amount = 116;
-
             Console.WriteLine("Amount = " + minSplit(amount));
 
             Console.ReadKey();

@@ -12,6 +12,7 @@ namespace _1_isPalindrome
         static void Main(string[] args)
         {
             bool result = isPalindrome("abra");
+            Console.WriteLine(result);
             Console.ReadLine();
         }
         static bool isPalindrome(String text)
