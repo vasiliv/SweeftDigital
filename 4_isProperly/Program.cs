@@ -7,27 +7,30 @@ using System.Threading.Tasks;
 namespace _4_isProperly
 {
     class Program
-    {
-        public static bool answer;
+    {        
         static void Main(string[] args)
         {
-            bool result = isProperly("(()())");
-            Console.ReadLine();
+            string sequence = "((a+b)*c)-(a-b)";
+            bool checkResult = IsProperly(sequence);
+            if (checkResult)
+                Console.WriteLine("Brackets Correct!");
+            else
+                Console.WriteLine("Brackets Not Correct!");
+            Console.ReadKey();
         }
-        static Boolean isProperly(String sequence)
+        static Boolean IsProperly(String sequence)
         {
-            for (int i = 0; i < (int)(sequence.Length / 2); i++)
+            int checkBrackets = 0;
+            for (int i = 0; i < sequence.Length; i++)
             {
-                if ((sequence[i] == '(' && sequence[sequence.Length - 1 - i] == ')') || ((sequence[i] == ')' && sequence[sequence.Length - 1 - i] == '(')))
-                {
-                    answer = true;
-                }
-                else
-                {
-                    return false;
-                }
-                return answer;
+                if (sequence[i] == '(')
+                    checkBrackets++;
+                else if (sequence[i] == ')')
+                    checkBrackets--;
             }
+            if (checkBrackets == 0)
+                return true;
+            return false;
         }
     }
 }
