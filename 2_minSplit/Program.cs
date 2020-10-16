@@ -7,42 +7,42 @@ using System.Threading.Tasks;
 namespace _2_minSplit
 {
     class Program
-    {
-        static int sum = 0;
-        static int divisor1 = 50, divisor2 = 20, divisor3 = 10, divisor4 = 5, divisor5 = 1;
+    {        
         static void Main(string[] args)
         {
-            int result = minSplit(120);
+            int amount = 116;
+
+            Console.WriteLine("Amount = " + minSplit(amount));
+
             Console.ReadKey();
         }
         static int minSplit(int amount)
         {
-            while (amount / divisor1 >= 1)
+            int[] array = new int[] { 50, 20, 10, 5, 1 };
+
+            int count = 0;
+
+            List<int> list = new List<int>(); //optional
+
+            int number = 116;
+
+            for (int i = 0; i < array.Length; i++)
             {
-                sum++;
-                amount -= divisor1;
+
+                while (number >= array[i])
+                {
+                    number = number - array[i];
+                    count++;
+                    list.Add(array[i]); //optional
+                }
             }
-            while (amount / divisor2 >= 1)
-            {
-                sum++;
-                amount -= divisor2;
-            }
-            while (amount / divisor3 >= 1)
-            {
-                sum++;
-                amount -= divisor3;
-            }
-            while (amount / divisor4 >= 1)
-            {
-                sum++;
-                amount -= divisor4;
-            }
-            while (amount / divisor5 >= 1)
-            {
-                sum++;
-                amount -= divisor5;
-            }
-            return sum;
+
+            foreach (var item in list)
+            { //optional
+                Console.WriteLine(item);  //optional
+            }  //optional
+            Console.WriteLine(); //optional
+            return count;
         }
     }
 }

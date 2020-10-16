@@ -11,10 +11,10 @@ namespace _1_isPalindrome
 
         static void Main(string[] args)
         {
-            bool result = isPalindrome("abba");
+            bool result = isPalindrome("abra");
             Console.ReadLine();
         }
-        static Boolean isPalindrome(String text)
+        static bool isPalindrome(String text)
         {
             
             for (int i = 0; i <  (int)text.Length/2; i++)
