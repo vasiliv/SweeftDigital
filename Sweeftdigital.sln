@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_minSplit", "2_minSplit\2_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_isProperly", "4_isProperly\4_isProperly.csproj", "{9E90A4B9-48BB-4D7F-AFC9-742AAB9F72F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_MaxElement", "3_MaxElement\3_MaxElement.csproj", "{195EE924-8C5C-4037-865F-F3478DD62A33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{9E90A4B9-48BB-4D7F-AFC9-742AAB9F72F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E90A4B9-48BB-4D7F-AFC9-742AAB9F72F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E90A4B9-48BB-4D7F-AFC9-742AAB9F72F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195EE924-8C5C-4037-865F-F3478DD62A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195EE924-8C5C-4037-865F-F3478DD62A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195EE924-8C5C-4037-865F-F3478DD62A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195EE924-8C5C-4037-865F-F3478DD62A33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
